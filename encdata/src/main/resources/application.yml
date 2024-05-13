@@ -1,0 +1,49 @@
+server:
+  port: 1090
+  servlet:
+    session:
+      cookie:
+        name: JSESSIONID
+        path: /
+        http-only: false
+    context-path: /encdata
+  error:
+    path: /error
+    whitelabel:
+      enabled: false
+ 
+  
+spring:
+  application:
+    name: encdata    
+  messages:
+    basename: errors,messages 
+  jpa:
+    generate-ddl: true
+    show-sql: true 
+  main:
+        allow-circular-references: true 
+
+transactionPayoutAPI: "https://uat.sbiepay.sbi/payagg/transactionPayoutAPI/getTransactionPayoutAPI"
+transactionMISAPI: "https://uat.sbiepay.sbi/payagg/MISSettleReport/transactionMISAPI"
+statusQueryAPI: "https://uat.sbiepay.sbi/queryAPI/getQueryAPI"
+TransactionUrl: "https://uat.sbiepay.sbi/secure/AggregatorHostedListener?EncryptTrans="
+apiUrl: "https://uat.sbiepay.sbi/payagg/statusQuery/getStatusQuery"
+refundApiUrl: "https://uat.sbiepay.sbi/payagg/bookRefundCancellation/AggStandardEncRefundQueryService"
+queryAPIUrl: "https://uat.sbiepay.sbi/payagg/statusQuery/getStatusQuery?queryRequest="
+refundAPIUrl: "https://test.sbiepay.sbi/payagg/bookRefundCancellation/AggStandardEncRefundQueryService"
+successUrl: "https://uat.sbiepay.sbi/secure/sucess3.jsp"
+failUrl: "https://uat.sbiepay.sbi/secure/fail3.jsp"
+mkValue: "kykB5W/srURRCRFYYumycgtkEAlbaPnSlQIbE6VqHw8="
+kkValue: "X1gi8mD9/wWch2jZd9tbUg=="
+encryptionMethod: AES128
+checksumMethod: SHA256
+merchantId: 1000003
+operatingMode: DOM
+merchantCountry: IN
+merchantCurrency: INR
+otherDetails: Other
+aggregatorId: SBIEPAY
+paymode: NB
+accessMedium: ONLINE
+transactionSource: ONLINE
