@@ -34,8 +34,8 @@ queryAPIUrl: "https://uat.sbiepay.sbi/payagg/statusQuery/getStatusQuery?queryReq
 refundAPIUrl: "https://test.sbiepay.sbi/payagg/bookRefundCancellation/AggStandardEncRefundQueryService"
 successUrl: "https://uat.sbiepay.sbi/secure/sucess3.jsp"
 failUrl: "https://uat.sbiepay.sbi/secure/fail3.jsp"
-mkValue: "kykB5W/srURRCRFYYumycgtkEAlbaPnSlQIbE6VqHw8="
-kkValue: "X1gi8mD9/wWch2jZd9tbUg=="
+mkValue: "ABCD"
+kkValue: "ABCD"
 encryptionMethod: AES128
 checksumMethod: SHA256
 merchantId: 1000003
